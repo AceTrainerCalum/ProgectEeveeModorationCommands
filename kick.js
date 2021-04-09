@@ -3,7 +3,6 @@ module.exports = {
     description: "this is a kick command",
     async execute(Client, message, args, discord) {
         const member = message.mentions.users.first();
-        if (message.member.permissions.has("KICK_MEMBERS")) {
             if (member) {
                 const memberTarget = message.guild.members.cache.get(member.id);
                 message.channel.send(`${message.author} kicked a member `);
