@@ -3,7 +3,6 @@ module.exports = {
     description: "this is a ban command",
     async execute(Client, message, args, discord) {
         const member = message.mentions.users.first();
-        if (message.member.permissions.has("BAN_MEMBERS")) {
             if (member) {
                 const memberTarget = message.guild.members.cache.get(member.id);
                 message.channel.send(`${message.author} banned a member `);
