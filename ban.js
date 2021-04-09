@@ -8,7 +8,6 @@ module.exports = {
                 message.channel.send(`${message.author} banned a member `);
                 memberTarget.ban();
                 message.channel.send("User has been banned");
-                console.log(`${message.author.id} banned a member!`)
                 console.log(`${message.author.id} is the id of the member who kicked the member!`)
                 console.log(` `)
                 console.log(` --- new accounnt of punnishment ---`)
